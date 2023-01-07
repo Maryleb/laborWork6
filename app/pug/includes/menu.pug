@@ -1,15 +1,17 @@
 mixin createMenu(address)
 	if address == "main"
-		.menu 
-			a(href="index.html").menu_item.active
-				img.logo(src="img/logo.jpg")
-			a(href="").menu_item Ипотека
-			a(href="").menu_item Проекты
-			a(href="").menu_item Квартиры
-			a(href="").menu_item Нежилые помещения
-			a(href="").menu_item Камеры
-			a(href="").menu_item Фотоотчеты
-			a(href="").menu_item Избранное
-			a(href="").menu_item
+		.menu
+			.menu1
+				a(href="index.html").menu_item.active
+					img.logo(src="img/logo.jpg")
+			.menu2
+				a(href="").menu_item Ипотека
+				a(href="").menu_item Проекты
+				a(href="").menu_item Квартиры
+				a(href="").menu_item Нежилые помещения
+				a(href="").menu_item Камеры
+				a(href="").menu_item Фотоотчеты
+				a(href="").menu_item Избранное
+			.menu3
 				p.greytxt Отдел продаж
 				p.number +7 (423) 279-07-47

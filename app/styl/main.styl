@@ -43,6 +43,10 @@ body
 		&:hover
 			color orange
 
+.menu2
+	display flex
+	justify-content space-between
+
 hr
 	border none
 	height 1px
@@ -96,11 +100,20 @@ hr
 	img
 		height 100%
 
+@media (max-width 1400px)
+	.menu
+		.menu_item
+			padding 8px
+
 @media (max-width 1200px)
 	.uptext
 		display none
 	.menu
-		display none
+		margin-top 15px
+	.menu2 
+		flex-wrap wrap
+		flex-direction column
+		text-align center
 
 	.main_block
 		.main_small
@@ -129,3 +142,4 @@ hr
 		.adv_item
 			width 50%
 			margin auto
+
