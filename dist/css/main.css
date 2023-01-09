@@ -44,7 +44,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   color: #000;
-  padding: 15px;
+  padding: 30px;
 }
 .menu .menu_item:hover {
   color: #ffa500;
@@ -52,6 +52,9 @@ body {
 .menu2 {
   display: flex;
   justify-content: space-between;
+}
+.logo {
+  max-width: 65px;
 }
 hr {
   border: none;
@@ -95,15 +98,15 @@ hr {
 .title_mini {
   font-size: 40px;
 }
-.advantages {
+.cats_amount {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.advantages .adv_item {
+.cats_amount .cat_item {
   width: 19%;
 }
-.advantages .adv_item img {
+.cats_amount .cat_item img {
   width: 100%;
   border-radius: 10px;
 }
@@ -116,7 +119,7 @@ hr {
 }
 @media (max-width: 1400px) {
   .menu .menu_item {
-    padding: 8px;
+    padding: 18px;
   }
 }
 @media (max-width: 1200px) {
@@ -159,11 +162,12 @@ hr {
     text-align: center;
     margin-bottom: 30px;
   }
-  .advantages {
+  .cats_amount {
     flex-direction: column;
+    justify-content: space-between;
   }
-  .advantages .adv_item {
-    width: 50%;
-    margin: auto;
+  .cats_amount .cat_item {
+    width: 40%;
+    margin: 15px auto;
   }
 }

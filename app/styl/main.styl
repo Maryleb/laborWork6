@@ -39,13 +39,16 @@ body
 		font-weight 500
 		font-size 16px
 		color black
-		padding 15px
+		padding 30px
 		&:hover
 			color orange
 
 .menu2
 	display flex
 	justify-content space-between
+
+.logo
+	max-width 65px
 
 hr
 	border none
@@ -84,11 +87,11 @@ hr
 .title_mini
 	font-size 40px
 
-.advantages
+.cats_amount
 	display flex
 	justify-content space-between
 	margin-bottom 30px
-	.adv_item
+	.cat_item
 		width 19%
 		img
 			width 100%
@@ -103,7 +106,7 @@ hr
 @media (max-width 1400px)
 	.menu
 		.menu_item
-			padding 8px
+			padding 18px
 
 @media (max-width 1200px)
 	.uptext
@@ -137,9 +140,10 @@ hr
 	.title_mini
 		text-align center
 		margin-bottom 30px
-	.advantages
+	.cats_amount
 		flex-direction column
-		.adv_item
-			width 50%
-			margin auto
+		justify-content space-between
+		.cat_item
+			width 40%
+			margin 15px auto
 
