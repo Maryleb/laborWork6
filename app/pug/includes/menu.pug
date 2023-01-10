@@ -2,14 +2,44 @@ mixin createMenu(address)
 	if address == "main"
 		.menu
 			.menu1
-				a(href="index.html").menu_item.active
+				a(href="index.html").menu_item
 					img.logo(src="img/logo.png")
 			.menu2
-				a(href="").menu_item Наши питомцы
+				a(href="pats.html").menu_item Наши питомцы
 				a(href="").menu_item Проекты
 				a(href="").menu_item Питомники
 				a(href="").menu_item Фотоотчеты
-				a(href="").menu_item Избранное
+				a(href="favorite.html").menu_item Избранное
+			.menu3
+				p.greytxt Связь с нами
+				p.number +7 (423) 279-07-47
+
+	if address == "pats"
+		.menu
+			.menu1
+				a(href="index.html").menu_item
+					img.logo(src="img/logo.png")
+			.menu2
+				a(href="pats.html").menu_item.active Наши питомцы
+				a(href="").menu_item Проекты
+				a(href="").menu_item Питомники
+				a(href="").menu_item Фотоотчеты
+				a(href="favorite.html").menu_item Избранное
+			.menu3
+				p.greytxt Связь с нами
+				p.number +7 (423) 279-07-47
+
+	if address == "favorite"
+		.menu
+			.menu1
+				a(href="index.html").menu_item
+					img.logo(src="img/logo.png")
+			.menu2
+				a(href="pats.html").menu_item Наши питомцы
+				a(href="").menu_item Проекты
+				a(href="").menu_item Питомники
+				a(href="").menu_item Фотоотчеты
+				a(href="favorite.html").menu_item.active Избранное
 			.menu3
 				p.greytxt Связь с нами
 				p.number +7 (423) 279-07-47

@@ -49,6 +49,9 @@ body {
 .menu .menu_item:hover {
   color: #ffa500;
 }
+.menu .active {
+  color: #ffa500;
+}
 .menu2 {
   display: flex;
   justify-content: space-between;
@@ -117,6 +120,30 @@ hr {
 .footer img {
   height: 100%;
 }
+.graph {
+  display: block;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+table th,
+table td {
+  padding: 20px;
+  border: 1px solid #ffa500;
+}
+.cat {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.cat img {
+  border-radius: 10%;
+  width: 100%;
+}
 @media (max-width: 1400px) {
   .menu .menu_item {
     padding: 18px;
@@ -129,18 +156,21 @@ hr {
   .menu {
     margin-top: 15px;
   }
-  .menu2 {
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-  }
   .main_block .main_small {
     font-size: 16px;
   }
 }
 @media (max-width: 1000px) {
+  .menu2 {
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .menu2 .menu_item {
+    width: 50%;
+  }
   .main_block {
-    margin-bottom: 0px;
+    margin-bottom: -150px;
     flex-direction: column;
   }
   .main_block .main_big {
@@ -169,5 +199,13 @@ hr {
   .cats_amount .cat_item {
     width: 40%;
     margin: 15px auto;
+  }
+  table {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  table {
+    font-size: 10px;
   }
 }
