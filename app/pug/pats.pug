@@ -22,12 +22,53 @@ html
 				.graph
 					details
 						summary График
+						form
+							p Значение по оси ОХ <br>
+								input(type="checkbox", name="category", value="0") 
+								| &nbsp Порода <br>
+								input(type="checkbox", name="category", value="1") 
+								| &nbsp Год рождения <br>
+								input(type="checkbox", name="category", value="2") 
+								| &nbsp Окрас <br>
+						form
+							p Результат <br>
+								input(type="checkbox", name="category", value="0") 
+								| &nbsp Средний вес <br>
+								input(type="checkbox", name="category", value="1") 
+								| &nbsp Количество кошек<br>
+
 				.graph
 					details
 						summary Фильтр
+						form
+							label Кличка: 
+								input(type="text", name="name")
+							p Порода:
+								select(name="brade")
+									option(value="0") -
+									option(value="1") Сибирская
+									option(value="2") Британская
+									option(value="3") Аббисинская
+									option(value="4") Русская голубая
+									option(value="5") Сиамская
+									option(value="6") Азиатская
+							label Год рождения:
+								input(type="number", min="2000", max="2023", value="2000")
+							p
+								label Вес, больше чем :
+									input(type="text", value="0")
+
 				.graph
 					details
 						summary Сортировка
+						form
+							p Сортировка по:
+								select(name="brade")
+									option(value="0") Кличка
+									option(value="1") Порода
+									option(value="2") Год рождения
+									option(value="3") Окрас
+									option(value="4") Вес, кг
 
 				table
 					tr

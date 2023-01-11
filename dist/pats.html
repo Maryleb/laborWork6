@@ -30,16 +30,64 @@
         <div class="graph">
           <details>
             <summary>График</summary>
+            <form>
+              <p>Значение по оси ОХ <br>
+                <input type="checkbox" name="category" value="0"/>&nbsp Порода <br>
+                <input type="checkbox" name="category" value="1"/>&nbsp Год рождения <br>
+                <input type="checkbox" name="category" value="2"/>&nbsp Окрас <br>
+              </p>
+            </form>
+            <form>
+              <p>Результат <br>
+                <input type="checkbox" name="category" value="0"/>&nbsp Средний вес <br>
+                <input type="checkbox" name="category" value="1"/>&nbsp Количество кошек<br>
+              </p>
+            </form>
           </details>
         </div>
         <div class="graph">
           <details>
             <summary>Фильтр</summary>
+            <form>
+              <label>Кличка: 
+                <input type="text" name="name"/>
+              </label>
+              <p>Порода:
+                <select name="brade">
+                  <option value="0">-</option>
+                  <option value="1">Сибирская</option>
+                  <option value="2">Британская</option>
+                  <option value="3">Аббисинская</option>
+                  <option value="4">Русская голубая</option>
+                  <option value="5">Сиамская</option>
+                  <option value="6">Азиатская</option>
+                </select>
+              </p>
+              <label>Год рождения:
+                <input type="number" min="2000" max="2023" value="2000"/>
+              </label>
+              <p>
+                <label>Вес, больше чем :
+                  <input type="text" value="0"/>
+                </label>
+              </p>
+            </form>
           </details>
         </div>
         <div class="graph">
           <details>
             <summary>Сортировка</summary>
+            <form>
+              <p>Сортировка по:
+                <select name="brade">
+                  <option value="0">Кличка</option>
+                  <option value="1">Порода</option>
+                  <option value="2">Год рождения</option>
+                  <option value="3">Окрас</option>
+                  <option value="4">Вес, кг</option>
+                </select>
+              </p>
+            </form>
           </details>
         </div>
         <table>
